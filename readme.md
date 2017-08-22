@@ -10,7 +10,7 @@ Import the library, run the monkey patch, then register functions to handle
 class serialization. Call json.dumps as usual and receive output for your
 typically un-encodable objects.
 
-```
+```python
 >>> from datetime import datetime
 >>> import json
 >>> import json_cerealizer
@@ -30,7 +30,7 @@ serialize a non-standard type, you receive a TypeError. The following is an
 example showing that datetime objects cannot be serialized by the default
 JSON encoder.
 
-```
+```python
 >>> import json
 >>> from datetime import datetime
 >>>
@@ -54,7 +54,7 @@ TypeError: datetime.datetime(2017, 8, 21, 19, 47, 17, 785813) is not JSON serial
 This issue is easily resolved by subclassing the json.JSONEncoder class,
 allowing you to specify how objects should be serialized.
 
-```
+```python
 >>> import json
 >>> from datetime import datetime
 >>>
@@ -75,7 +75,7 @@ a particular class. In this case, we are saying instances of `datetime` should
 be passed into the function `datetime.isoformat`, which will return a value
 that is natively serializable.
 
-```
+```python
 >>> from datetime import datetime
 >>> import json
 >>> import json_cerealizer
@@ -90,7 +90,7 @@ that is natively serializable.
 
 To solidify our understanding, lets handle a class of our own.
 
-```
+```python
 >>> import json
 >>> import json_cerealizer
 >>>
