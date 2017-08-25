@@ -4,6 +4,12 @@ A simple library for monkey patching the python json library, thereby making it
 easier to add serializers for objects that cannot be encoded using the default
 JSONEncoder.
 
+## Install
+
+```
+pip install json-cerealizer
+```
+
 ## TL;DR Example
 
 Import the library, run the monkey patch, then register functions to handle
