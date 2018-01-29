@@ -7,4 +7,4 @@ uninstall:
 reinstall: uninstall install
 
 test:
-	nosetests tests/
+	tox --skip-missing-interpreter
