@@ -1,4 +1,6 @@
 # JSON Cerealizer
+[![Build Status](https://api.travis-ci.org/bplower/json-cerealizer.svg?branch=master)](https://api.travis-ci.org/bplower/json-cerealizer.svg?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/bplower/json-cerealizer/badge.svg?branch=master)](https://coveralls.io/github/bplower/json-cerealizer?branch=master)
 
 A simple library for monkey patching the python json library, thereby making it
 easier to add serializers for objects that cannot be encoded using the default
